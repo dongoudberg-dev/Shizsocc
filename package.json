@@ -1,0 +1,16 @@
+{
+  "name": "shizsociety-cloudflare",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create shizsociety-db",
+    "db:migrate:local": "wrangler d1 migrations apply shizsociety-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply shizsociety-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.20.0"
+  }
+}
